@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
 
 :root {
-	--body-bg-color: #1B1B1B;
-	--text-color-primaria: #F5F2F2;
-	--links-hover: #000000;
+	--body-bg-color: #222831;
+	--text-color-primaria: #EEEEEE;
+	--text-color-secundaria: #00ADB5;
+	--links-hover: #393E46;
 	--cinza-claro: #747171;
 
 	--fonte-primaria: "Poppins", sans-serif;
@@ -18,16 +19,17 @@ body {
 	box-sizing: border-box;
 	background-color: var(--body-bg-color);
 	font-family: var(--fonte-primaria);
-	color: var(--cinza-claro);
+	color: var(--text-color-primaria);
 }
 
 .cabecalho {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--cinza-claro);
+	background: rgba(0, 0, 0, 0.35);
 	color: var(--text-color-primaria);
 	padding: 0.5% 15% 0.5% 15%;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 .cabecalho__menu {
@@ -38,10 +40,11 @@ body {
 
 .cabecalho__menu__link {
 	margin: 0 0.625rem;
+	color: var(--text-color-secundaria);
 }
 
 .cabecalho__menu__link:hover {
-	color: var(--links-hover);
+	color: var(--text-color-primaria);
 }
 
 a {
@@ -50,11 +53,11 @@ a {
 }
 
 .apresentacao__conteudo__titulo {
-	color: var(--text-color-primaria);
+	color: var(--text-color-secundaria);
 	font-size: 1.125rem;
 }
 .apresentacao__texto__destaque {
-	color: var(--text-color-primaria);
+	color: var(--text-color-secundaria);
 	font-size: 2.1875rem;
 	font-weight: 800;
 }
@@ -97,7 +100,7 @@ a {
 	width: 50%;
 	text-align: center;
 	text-decoration: none;
-	border: 2px solid var(--cinza-claro);
+	border: 2px solid var(--text-color-primaria);
 	border-radius: 8px;
 	font-size: 1.125rem;
 	padding: 0.8125rem 0;
@@ -116,11 +119,12 @@ a {
 .apresentacao__imagem {
 	width: 40%;
 	border-radius: 10%;
+	box-shadow: rgba(0, 0, 0, 0.24) 5px 6px 16px;
 }
 
 .rodape {
 	border-top: 1px solid var(--text-color-primaria);
-	color: var(--text-color-primaria);
+	color: var(--text-color-secundaria);
 	padding: 1%;
 	text-align: center;
 	font-size: 1rem;
@@ -128,12 +132,15 @@ a {
 
 @media (max-width: 1200px) {
 	.cabecalho {
-		padding: 10%;
-		background-color: var(--body-bg-color);
+		padding: 5%;
 	}
 
 	.cabecalho__menu {
 		justify-content: center;
+	}
+
+	.apresentacao__imagem {
+		height: 40%;
 	}
 
 	.apresentacao {
@@ -143,5 +150,9 @@ a {
 
 	.apresentacao__conteudo {
 		width: auto;
+	}
+
+	.rodape {
+		font-size: 0.7rem;
 	}
 }
