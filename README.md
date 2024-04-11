@@ -1,6 +1,6 @@
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
-![image]()
+![image](portfolio-print.PNG)
 
 ## Ferramentas utilizadas:
 
