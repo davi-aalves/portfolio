@@ -143,9 +143,9 @@ a {
 	}
 
 	.apresentacao__imagem {
-		width: 60%;
-		height: auto;
-  	max-width: 100%
+		width: 50%;
+  	height: 100%;
+  	object-fit: contain;
 	}
 
 	.apresentacao {
