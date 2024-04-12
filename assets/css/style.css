@@ -144,6 +144,8 @@ a {
 
 	.apresentacao__imagem {
 		width: 60%;
+		height: auto;
+  	max-width: 100%
 	}
 
 	.apresentacao {
